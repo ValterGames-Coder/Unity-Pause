@@ -7,8 +7,6 @@ public class Pause : MonoBehaviour
     public Action<bool> IsPause;
     private bool _pause;
 
-    //[SerializeField] private GameObject _pausePanel;
-
     private void Awake()
     {
         if (!instance)
@@ -29,6 +27,4 @@ public class Pause : MonoBehaviour
     }
     
     public bool GetPause() => _pause;
-
-    //private void ActivePausePanel(bool pause) => _pausePanel.SetActive(pause);
 }
